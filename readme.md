@@ -45,6 +45,18 @@ Or install manually:
 ```bash
 pip install opencv-contrib-python numpy Pillow Flask Flask-Cors mysql-connector-python paho-mqtt
 ```
+
+### Node.js Module
+
+The frontend requires Node.js and npm. Install frontend dependencies:
+
+```bash
+cd frontend
+npm install
+```
+
+All required packages are listed in `frontend/package.json` and will be installed automatically.
+
 ## Database Configuration
 
 - Database name: `opencv_smart_doorbell_system`  
