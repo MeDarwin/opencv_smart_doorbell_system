@@ -1,0 +1,7 @@
+opencv-contrib-python
+numpy
+Pillow
+Flask
+Flask-Cors
+mysql-connector-python
+paho-mqtt
