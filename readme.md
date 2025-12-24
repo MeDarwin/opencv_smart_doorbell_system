@@ -21,7 +21,7 @@ A smart doorbell system powered by Raspberry Pi (Backend) and ESP32 (Sensor). It
 - **MQTT broker (HiveMQ):** for sensor messages. The backend expects `MQTT_BROKER` (default: `localhost`).  
 - **System libraries (Linux/RPi):** OpenCV may require libs such as `libgl1`, `libglib2.0-0`, etc.
 
-### Python libraries
+## Setup Python libraries
 
 The backend requires the following Python packages (installed in the backend environment):
 
@@ -46,7 +46,7 @@ Or install manually:
 pip install opencv-contrib-python numpy Pillow Flask Flask-Cors mysql-connector-python paho-mqtt
 ```
 
-### Node.js Module
+## Setup Node.js Module
 
 The frontend requires Node.js and npm. Install frontend dependencies:
 
@@ -57,7 +57,7 @@ npm install
 
 All required packages are listed in `frontend/package.json` and will be installed automatically.
 
-## Database Configuration
+## Setup Database Configuration
 
 - Database name: `opencv_smart_doorbell_system`  
 - Table name: `riwayat_tamu`
@@ -86,7 +86,7 @@ CREATE TABLE IF NOT EXISTS riwayat_tamu (
 - Confirm camera device index (0 or 1) in `backend/ambil_data.py` / `backend/main.py` if multiple cameras are attached.
 
 
-## Establishing Connection (Configuration)
+# Establishing Connection (Configuration)
 
 Ensure IP addresses match your network. Example assumption:
 - Raspberry Pi (running HiveMQ & Backend): `192.168.137.200`
